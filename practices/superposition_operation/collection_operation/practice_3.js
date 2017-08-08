@@ -1,8 +1,10 @@
 'use strict';
 
 function hybrid_operation_to_uneven(collection) {
-
-  //在这里写入代码
+  var a = 0;
+  collection.filter(value => {return value%2 === 1}).forEach(value => {
+    return  a+= value*3+5});
+  return a;
 }
 
 module.exports = hybrid_operation_to_uneven;
