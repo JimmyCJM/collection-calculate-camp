@@ -1,7 +1,11 @@
 'use strict';
 
 function get_intersection(collection_a, collection_b) {
-  //在这里写入代码
+  var result = new Array();
+  collection_b.forEach(value =>{
+    if(collection_a.includes(value))
+      result.push(value);
+  })
+  return result;
 }
-
 module.exports = get_intersection;
